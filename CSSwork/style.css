@@ -3,8 +3,8 @@ body{
 }
 /* div{
     background-color: blue;
-} */
- .container{
+/* } */
+ /* .container{
     background-color: red;
     color: azure;
     height: 300px;
@@ -18,4 +18,40 @@ body{
     border: 1px dotted black;
     width: 300px;
     margin: 100px;
- }
+ } */ 
+  /* .mygraph{
+    background-color: aquamarine;
+  }
+  #myid{
+    background-color: brown;
+  } */
+   .container{
+    background-color: cadetblue;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+   }
+   .child1,.child2,.child3{
+    height: 300px;
+    width: 200px;
+    border: 1px dotted blue;
+    /* display: inline-block;
+    padding: 20px;
+    margin: 20px; */
+    
+   }
+   .child1{
+    background-color: yellow;
+   }
+   .child2{
+    background-color: pink;
+    flex-basis: 50%;
+   }
+   .child3{
+    background-color: gray;
+   }
