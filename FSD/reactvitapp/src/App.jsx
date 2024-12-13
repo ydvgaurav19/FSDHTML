@@ -1,39 +1,76 @@
 import React from 'react'
-import Student from './student'
-import Statehandling from './Statehandling'
-
-
+// import Student from './Student'
+// import StateHandling from './StateHandling'
+// import ImageManipulation from './ImageManipulation'
+// import UseEffectWork from './UseEffectWork'
+import Login from './Login'
+import Registration from './Registration'
+                                       //part of businees logic
 function App() {
-  const studentdata=[{
-    image:"https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png ",
-    name:"Rahul kumar",
-    Roll:"12354",
-    college:"ABES"
-  },
-  {
-    image:"https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png ",
-    name:"Rahul",
-    Roll:"12354",
-    college:"ABES"
-  }]
-  return (
+   
+  // const studentdata=[{
+  
+  //   image:photo,
+  //   name:"Saurabh Yadav",
+  //   roll:"145",
+  //   college:"ABES"
+  // },
+  //   {
+  //     image:photo,
+  //   name:"Sachin Yadav",
+  //   roll:"146",
+  //   college:"ABES"
+  //   },
+    
+
+  //  { image:photo,  
+  //   name:"Gaurav Yadav",
+  //   roll:"147",
+  //   college:"ABES"  
+  //  }
+  
+
+  // ]
+  return(
     <div>
       <div>
-        <h2 style={{color:'red'}}>Hello reactjs</h2>
-      </div>
-      <Statehandling/>
-      {
-        studentdata.map((ele)=>{
-          return(
-             <Student data={ele} />
-          )
-        })
-      }
-      {/* <Student image={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png ' height ={50}  width ={50} />} name="Rahul Kumar" roll="1234" college="abes"/> */}
+        <h2 style={{color:'blue'}}>Hello React JS</h2>
+        <h2>Login Form</h2>
+        <Login/>
+        <br></br>
+        <h2>Registration Form</h2>
+        <Registration/>
+        <div>
+          {/* <UseEffectWork/> */}
+        </div>
+             <div>
+             {/* {
+               {
+                studentdata.map((ele)=>{
+                  return(
+                     <Student data ={ele}/>
+                  )
+                })
+                 }
+                } */}
+            {/* //  < Student data={studentdata}/> */}
+              </div>  
+              <div>
+                {/* <ImageManipulation/> */}
+              </div>
 
+
+              {/* Here Start StateHandling */}
+              <div>
+                {/* <StateHandling/> */}
+              </div>
+           
+          <div>
+           {/* <Student image={<img src={photo} height={100} width={100} />} name="Saurabh"  roll="145"  college="ABESEC"/>          way to use component */}
+        </div>
+      </div>
     </div>
-    
   )
 }
 
-export default App
+export default App
